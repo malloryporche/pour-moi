@@ -1,3 +1,67 @@
+/*
+Site Name: MalloryPorche
+Author: MalloryPorche
+Author URI: http://www.wearetrailblazers.com/mp
+Description: Retail, Business Website
+Version: 1.0
+*/
+/*
+----------------------------------------------------------------
+Made with love by MalloryPorche | http://www.msmalloryporche.com
+----------------------------------------------------------------
+
+1) RESET, BOOTSTRAP STYLING, genertal
+2) VARIABLES & MIXINS
+3) GLOBAL STYLES
+4) HOME
+5) NAVIGATION
+6) SECTIONS
+7) SERVICES
+8) WORKS
+9) GALLERY
+10) TEAM
+11) CONTACT
+12) FOOTER
+13) CAROUSELS
+14) BUTTONS
+--------------
+*/
+/*----------------------------------------------------------------
+    GENERAL:  CSS-RESET | BOOTSTRAP
+----------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5126,73 +5190,57 @@ button.close {
     display: none !important; }
  }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+/*----------------------------------------------------------------
+    GENERAL:  VARIABLES  |  MIXINS  |  FUNCTIONS
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    GENERAL:  GLOBALS | TYPOGRAPHY
+----------------------------------------------------------------*/
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
-/* Space out content a bit */
+@font-face {
+  font-family: ' ';
+  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.eot');
+  /* IE9 Compat Modes */
+  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff2') format('woff2'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff') format('woff'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.ttf') format('truetype'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.svg') format('svg');
+  /* Legacy iOS */ }
+
+html {
+  font-family: "Baron";
+  font-size: 17px; }
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  font-family: "Baron"; }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header, .marketing, .footer {
-  padding-left: 15px;
-  padding-right: 15px; }
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5; }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px; }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5; }
-
-.container-narrow > hr {
-  margin: 30px 0; }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
-
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px; }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0; }
-
-.marketing p + h4 {
-  margin-top: 28px; }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px; }
-
-  /* Remove the padding we set earlier */
-  .header, .marketing, .footer {
-    padding-left: 0;
-    padding-right: 0; }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0; }
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 16px; }
  }
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 14px; }
+ }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+section {
+  background: white; }
+  section h1 {
+    color: black; }
+
+/*----------------------------------------------------------------
+    MODULES:  NAVIGATION | HEADER  |  FOOTER
+----------------------------------------------------------------*/
+@_import "modules/_navigation";
+/*----------------------------------------------------------------
+    PAGE:  HOME
+----------------------------------------------------------------*/
