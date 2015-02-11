@@ -6,16 +6,6 @@ html, body {
 	margin: 0;
 }
 
-//TYPOGRAPHY AND FONT INCLUDES
-@font-face {
-  font-family: ' ';
-  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.svg') format('svg'); /* Legacy iOS */
-}
-
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
 	font-family: "Baron";

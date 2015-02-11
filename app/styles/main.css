@@ -5202,13 +5202,6 @@ html, body {
   padding: 0;
   margin: 0; }
 
-@font-face {
-  font-family: ' ';
-  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff2') format('woff2'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff') format('woff'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.ttf') format('truetype'), url('./fonts/webfontkit-baron-regular/baron_neue-webfont.svg') format('svg');
-  /* Legacy iOS */ }
-
 html {
   font-family: "Baron";
   font-size: 17px; }
