@@ -5286,6 +5286,26 @@ a#pm-header__logo {
 /*----------------------------------------------------------------
     PAGE:  HOME
 ----------------------------------------------------------------*/
+.main-slider_item__wrapper {
+  margin: 10px 10px 10px 0;
+  padding: 0; }
+  .main-slider_item__wrapper img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+  .main-slider_item__wrapper:last-of-type {
+    background: #E00021;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    line-height: 1.8; }
+    .main-slider_item__wrapper:last-of-type .main-slider__item {
+      border: 2px solid white;
+      padding: 90px; }
+
 @media screen and (max-width: 768px) {
   #highlight_slider__multi-item-dsktp {
     display: none; }

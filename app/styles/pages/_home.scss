@@ -1,3 +1,40 @@
+.main-slider_item__wrapper {
+	margin: 10px 10px 10px 0;
+	padding: 0;
+	img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	&:last-of-type {
+		background: $primary_color;
+
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		padding: 10px;
+		letter-spacing: 3px;
+		font-weight: lighter;
+		line-height: 1.8;
+		.main-slider__item {
+			border: 2px solid white;
+			padding: 90px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
  @media screen and (max-width: 768px) {
  	#highlight_slider__multi-item-dsktp {
  		display: none;
