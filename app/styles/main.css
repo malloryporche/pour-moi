@@ -5246,3 +5246,8 @@ section {
   #highlight_slider__multi-item-dsktp {
     display: none; }
  }
+
+@media screen and (min-width: 769px) {
+  #highlight_slider__multi-item-mbl {
+    display: none; }
+ }
