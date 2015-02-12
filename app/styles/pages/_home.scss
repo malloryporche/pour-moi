@@ -23,7 +23,22 @@
 	}
 }
 
-
+div.row.carousel-inner {
+	margin: 0;
+	.item { 
+	h1, h2, h4, h6, p {
+		text-align: center;
+		font-family: "Times";
+	}
+	p {
+		padding: 0 40px;
+	}
+		img {
+		display: block;
+		margin: 0 auto;
+		}
+	}
+}
 
 
 

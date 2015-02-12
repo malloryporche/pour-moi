@@ -5306,6 +5306,17 @@ a#pm-header__logo {
       border: 2px solid white;
       padding: 90px; }
 
+div.row.carousel-inner {
+  margin: 0; }
+  div.row.carousel-inner .item h1, div.row.carousel-inner .item h2, div.row.carousel-inner .item h4, div.row.carousel-inner .item h6, div.row.carousel-inner .item p {
+    text-align: center;
+    font-family: "Times"; }
+  div.row.carousel-inner .item p {
+    padding: 0 40px; }
+  div.row.carousel-inner .item img {
+    display: block;
+    margin: 0 auto; }
+
 @media screen and (max-width: 768px) {
   #highlight_slider__multi-item-dsktp {
     display: none; }
