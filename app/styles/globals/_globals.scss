@@ -15,7 +15,7 @@ body {
 	font-family: "Arial";
 }
 @media screen and (max-width: 900px) {
-	html { font-size: 16px; }
+	html { font-size: 18px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -26,9 +26,11 @@ body {
 a {
 	color: $secondary_color;
 	text-decoration: none;
+	@include transition(color, .5s, ease, 0);;
 	&:hover {
 		text-decoration: none;
 		color: $accent;
+		@include transition(color, .5s, ease, 0);;
 	}
 }
 
@@ -37,4 +39,8 @@ section {
 	h1 {
 		color: black;
 	}
+}
+
+hr {
+	background-color: #eee;
 }
