@@ -5245,11 +5245,43 @@ section {
   border-color: #fff; }
 
 .navbar-default .navbar-toggle {
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 0; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff; }
 
 a#pm-header__logo {
-  position: relative;
-  top: 5%; }
+  padding: 25px 0 0 15px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Times";
+  font-style: oblique;
+  font-size: 3.52941rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  color: #46166b; }
+  a#pm-header__logo:hover {
+    color: #E00021; }
+
+#navbar {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.17647rem;
+  text-align: center;
+  font-weight: 700; }
+
+@media screen and (max-width: 480px) {
+  #pm-header__login ul li {
+    padding-top: 10px;
+    text-transform: uppercase;
+    display: none; }
+    #pm-header__login ul li:first-of-type {
+      display: block; }
+
+  #pm-header__links ul li {
+    display: none; }
+ }
 
 /*----------------------------------------------------------------
     PAGE:  HOME
