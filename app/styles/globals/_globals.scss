@@ -8,11 +8,11 @@ html, body {
 
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
-	font-family: "Baron";
+	font-family: "Arial";
 	font-size: $base_html_font_size;
 }
 body {
-	font-family: "Baron";
+	font-family: "Arial";
 }
 @media screen and (max-width: 900px) {
 	html { font-size: 16px; }
@@ -24,10 +24,11 @@ body {
 
 // TYPOGRAPHY ADJUSTMENTS
 a {
-	color: black;
+	color: $secondary_color;
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
+		color: $accent;
 	}
 }
 

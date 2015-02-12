@@ -5203,11 +5203,11 @@ html, body {
   margin: 0; }
 
 html {
-  font-family: "Baron";
+  font-family: "Arial";
   font-size: 17px; }
 
 body {
-  font-family: "Baron"; }
+  font-family: "Arial"; }
 
 @media screen and (max-width: 900px) {
   html {
@@ -5220,10 +5220,11 @@ body {
  }
 
 a {
-  color: black;
+  color: #5f6062;
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #46166b; }
 
 section {
   background: white; }
@@ -5239,6 +5240,17 @@ section {
     MODULES:  NAVIGATION | HEADER  |  FOOTER
 ----------------------------------------------------------------*/
 @_import "modules/_navigation";
+.navbar-default {
+  background-color: #FFF;
+  border-color: #fff; }
+
+.navbar-default .navbar-toggle {
+  border: 1px solid transparent; }
+
+a#pm-header__logo {
+  position: relative;
+  top: 5%; }
+
 /*----------------------------------------------------------------
     PAGE:  HOME
 ----------------------------------------------------------------*/
