@@ -91,23 +91,3 @@
 		$attribute: $value;
 	}
 }
-
-//  VISIBILITY QUERIES //
-@mixin hidden-phone {
-	@media screen and (max-width: 480px) {
-		display: none;
-	}
-}
-@mixin hidden-tablet {
-	@media screen and (min width: 481px) {
-		display: none;
-	}
-}
-@mixin hidden-tablet-landscape {
-	@media screen and (min-width: 768) and (max-width: 979);
-}
-@mixin hidden-desktop {
-	@media screen and (min-width: 1200px) {
-		display: none;
-	}
-}
