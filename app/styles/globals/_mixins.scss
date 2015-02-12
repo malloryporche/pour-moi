@@ -64,3 +64,50 @@
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
+
+//MEDIA QUERIES  //
+
+@mixin respond-to-phones($attribute, $value) {
+	@media screen and (max-width: 480px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-tablets($attribute, $value) {
+	@media screen and (min-width: 481px) and (max-width: 767px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-tablets-landscape($attribute, $value) {
+	@media screen and (min-width: 768px) and (max-width: 979px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-desktop($attribute, $value) {
+	@media screen and (min-width: 1200px) {
+		$attribute: $value;
+	}
+}
+
+//  VISIBILITY QUERIES //
+@mixin hidden-phone {
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+}
+@mixin hidden-tablet {
+	@media screen and (min width: 481px) {
+		display: none;
+	}
+}
+@mixin hidden-tablet-landscape {
+	@media screen and (min-width: 768) and (max-width: 979);
+}
+@mixin hidden-desktop {
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
